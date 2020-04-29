@@ -9,7 +9,7 @@ public:
             if(shift[i][0]==0)
             {
                 
-                s=s1.erase(0,d)+s2.erase(d,n);
+                s =s1.erase(0,d)+s2.erase(d,n);
             }
             else
             {
