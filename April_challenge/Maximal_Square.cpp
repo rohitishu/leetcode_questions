@@ -18,9 +18,9 @@ public:
      int k;
      for(k=0;k<ans.size();k++)
      {
-     while(!s.empty() and v[i]<v[s.top()])
+     while(!s.empty() and ans[i]<ans[s.top()])
      {
-     int d=v[s.top()];
+     int d=ans[s.top()];
      s.pop();
      int height=d
      int width=s.empty()?k:k-1-s.top();
