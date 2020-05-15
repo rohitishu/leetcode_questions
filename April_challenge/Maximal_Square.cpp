@@ -23,7 +23,7 @@ public:
      int d=v[s.top()];
      s.pop();
      int height=d
-     int width=i-1-s.top();
+     int width=s.empty()?k:k-1-s.top();
      int len=min(height,width);
      area=max(area,len*len);
      }
@@ -34,7 +34,8 @@ public:
       int d=v[s.top()];
      s.pop();
      int height=d
-     int width=i-1-s.top();
+     
+     int width=s.empty()?k:k-1-s.top();
      int len=min(height,width);
      area=max(area,len*len);
      }
